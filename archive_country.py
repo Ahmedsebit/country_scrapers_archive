@@ -2,13 +2,13 @@ import subprocess
 import os
 
 
-gazette_repository_name =  'archive'#os.getenv('GAZETTE_REPOSITORY_NAME')
-gazette_repository_url= 'https://github.com/Ahmedsebit/archive.git' #os.getenv('GAZETTE_REPOSITORY_URL')
-gazette_repository_branch = 'archive'#os.getenv('GAZETTE_REPOSITORY_BRANCH')
-country_repository_name = 'to_be_archived'#os.getenv('COUNTRY_REPOSITORY_NAME')
-country_repository_url = 'https://github.com/Ahmedsebit/to_be_archived.git'#os.getenv('COUNTRY_REPOSITORY_URL')
-country_repository_branch = 'deploy'#os.getenv('COUNTRY_REPOSITORY_BRANCH')
-country_name = 'Kenya'#os.getenv('COUNTRY')
+gazette_repository_name =  os.getenv('GAZETTE_REPOSITORY_NAME')
+gazette_repository_url= os.getenv('GAZETTE_REPOSITORY_URL')
+gazette_repository_branch = os.getenv('GAZETTE_REPOSITORY_BRANCH')
+country_repository_name = os.getenv('COUNTRY_REPOSITORY_NAME')
+country_repository_url = os.getenv('COUNTRY_REPOSITORY_URL')
+country_repository_branch = os.getenv('COUNTRY_REPOSITORY_BRANCH')
+country_name = os.getenv('COUNTRY')
 
 
 def archive_country(gazette_repo_url, gazette_repo_name, gazette_repo_branch, git_repo_url, git_repo_name, git_repo_branch, country):
